@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+  <title>Muhammad Rashid</title>
+</head>
+
+<body>
+
+  <!-- canvas -->
+  <canvas id="canvas" class="contfull"></canvas>
+  <!-- cursor -->
+  <div class="circle-dot" data-cursor-dot></div>
+  <div class="circle-outline" data-cursor-outline></div>
+
+  <!-- header -->
+  <header class="header center">
+    <a class="logo" href="index.html"><img src="public/r-logo.png" alt=""></a>
+    <nav>
+      <ul class="header--menu">
+        <li>
+          <a class="header--link" href="#projects">projects</a>
+        </li>
+        <li>
+          <a class="header--link" href="#skills">skills</a>
+        </li>
+        <li>
+          <a class="header--link" href="#education">education</a>
+        </li>
+        <li>
+          <a class="header--link" href="#contect">contact</a>
+        </li>
+        <li class="line"></li>
+        <li>
+          <button class="header--sun">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+            </svg>
+          </button>
+        </li>
+        <li>
+          <button class="header--resume btn" href="">resume</button>
+        </li>
+      </ul>
+      <button class="header--bars">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+            clip-rule="evenodd" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+  <!-- mobile popup -->
+  <div class="mobile-nav">
+    <nav>
+      <span class="nav-x" href="">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <path fill-rule="evenodd"
+            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+            clip-rule="evenodd" />
+        </svg>
+      </span>
+      <ul class="mobile-menu">
+        <li class="mobile-nav-link"><a href="#">links</a></li>
+        <li class="mobile-nav-link"><a href="#">links</a></li>
+        <li class="mobile-nav-link"><a href="#">links</a></li>
+        <li class="mobile-nav-link"><a href="#">links</a></li>
+        <li><button class="mobile-nav-sun">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+            </svg>
+          </button></li>
+        <li>
+          <a class="mobile-nav-btn btn" href="">Resume</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+    <!-- main -->
+    <main>
+      <!-- hero section -->
+      <section class="hero center">
+        <div class="content">
+          <h2 class="hero--subtitle">Hi,i'm Muhammad Rashid</h2>
+          <h1 class="hero--title">digitel markiting <br> expert</h1>
+          <p class="hero--description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A reprehenderit delectus
+            alias voluptatum, odit vero consectetur facilis in omnis. Sed deleniti mollitia quia eos soluta est voluptates
+            consequatur velit ratione?</p>
+          <div class="hero-links-sociol">
+            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <a href="#" class="hero--btn btn">about</a>
+        </div>
+      </section>
+      <!-- about popup -->
+      <section class="about container">
+        <div class="about-me"><img src="public/istockphoto-2099403180-1024x1024.jpg" alt=""></div>
+        <div class="somecont">
+          <span class="x" href="">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                clip-rule="evenodd" />
+            </svg>
+          </span>
+          <h2 class="about-h2">about me</h2>
+          <p class="about-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ullam officiis maxime
+            mollitia aliquid reiciendis culpa dicta odio atque doloribus asperiores est nam tenetur, qui non rerum quaerat
+            tempore placeat! lore</p>
+          <div class="wrapper ">
+            <div class="itemLeft item1"><img src="public/icons8-facebook-48.png" alt=""></div>
+            <div class="itemLeft item2"><img src="public/icons8-facebook-messenger-48.png" alt=""></div>
+            <div class="itemLeft item3"><img src="public/icons8-instagram-48.png" alt=""></div>
+            <div class="itemLeft item4"><img src="public/icons8-linkedin-48.png" alt=""></div>
+            <div class="itemLeft item5"><img src="public/icons8-pinterest-48.png" alt=""></div>
+            <div class="itemLeft item6"><img src="public/icons8-reddit-48.png" alt=""></div>
+            <div class="itemLeft item7"><img src="public/icons8-tiktok-48.png" alt=""></div>
+            <div class="itemLeft item8"><img src="public/icons8-x-48.png" alt=""></div>
+          </div>
+          <div class="wrapper warp2">
+            <div class="itemRight item1"><img src="public/icons8-x-50.png" alt=""></div>
+            <div class="itemRight item2"><img src="public/icons8-youtube-48.png" alt=""></div>
+            <div class="itemRight item3"><img src="public/icons8-instagram-48.png" alt=""></div>
+            <div class="itemRight item4"><img src="public/icons8-reddit-48.png" alt=""></div>
+            <div class="itemRight item5"><img src="public/icons8-x-48.png" alt=""></div>
+            <div class="itemRight item6"><img src="public/icons8-linkedin-48.png" alt=""></div>
+            <div class="itemRight item7"><img src="public/icons8-tiktok-48.png" alt=""></div>
+            <div class="itemRight item8"><img src="public/icons8-facebook-48.png" alt=""></div>
+          </div>
+          <div class="sociol-link">
+            <a href="">linkdin</a>
+            <a href="">tiktok</a>
+            <a href="">instagram</a>
+            <a href="">facebook</a>
+          </div>
+        </div>
+      </section>
+  
+  
+  
+      <!-- skills section -->
+      <h1 class="skills-h1">my skills</h1>
+      <section id="skills" class="container-prog container ">
+        <div class="progress-bar">
+          <h1 class="heading">Horizontal Bars</h1>
+          <div class="horizontal-bars">
+            <div class="bar">
+              <div class="info">
+                <span>HTML</span>
+              </div>
+              <div class="progress-line html">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>CSS</span>
+              </div>
+              <div class="progress-line css">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>jQuery</span>
+              </div>
+              <div class="progress-line jquery">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>Python</span>
+              </div>
+              <div class="progress-line python">
+                <span></span>
+              </div>
+            </div>
+            <div class="bar">
+              <div class="info">
+                <span>MySQL</span>
+              </div>
+              <div class="progress-line mysql">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="progress-bar">
+          <h1 class="heading">Radial Bars</h1>
+          <div class="radial-bars">
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">90%</div>
+              <div class="text">Creativity</div>
+            </div>
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">65%</div>
+              <div class="text">Communication</div>
+            </div>
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">75%</div>
+              <div class="text">Problem Solving</div>
+            </div>
+            <div class="radial-bar">
+              <svg x="0px" y="0px" viewBox="0 0 200 200">
+                <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+              </svg>
+              <div class="percentage">85%</div>
+              <div class="text">Teamwork</div>
+            </div>
+          </div>
+        </div>
+        <!-- to top -->
+        <a href="#" class="to-top">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 18.75 7.5-7.5 7.5 7.5" />
+            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
+          </svg>
+        </a>
+      </section>
+  
+      <!-- education -->
+      <section id="education" class="container section-gap">
+        <div class="education">
+  
+          <div class="row">
+  
+            <section class="col">
+  
+              <header class="title">
+                <h2>EDUCATION</h2>
+              </header>
+  
+              <div class="contents">
+  
+                <div class="box">
+                  <h4>2018 - 2022</h4>
+                  <h3>High School Degree</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+  
+                <div class="box">
+                  <h4>2018 - 2022</h4>
+                  <h3>Bachelor's Degree</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+  
+                <div class="box">
+                  <h4>2018 - 2022</h4>
+                  <h3>Master Degree</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+  
+              </div>
+            </section>
+  
+  
+            <section class="col">
+  
+              <header class="title">
+                <h2>EXPERIENCE</h2>
+              </header>
+  
+              <div class="contents">
+  
+                <div class="box">
+                  <h4>2018 - 2022</h4>
+                  <h3>UI/UX Designer</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+  
+                <div class="box">
+                  <h4>2018 - 2022</h4>
+                  <h3>Full-Stack Developer</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+  
+                <div class="box">
+                  <h4>2018 - 2022</h4>
+                  <h3>Frontend Developer</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+  
+              </div>
+            </section>
+  
+          </div>
+        </div>
+      </section>
+  
+      <!-- contact section -->
+      <section id="contect" class="container form-contetc section-gap">
+        <h1 class="contect-me-h3">contect me</h1>
+        <div class="contect">
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="your name">
+  
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="your email">
+  
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="your message" rows="6"></textarea>
+  
+            <div class="submit">
+              <a class="btn submit" href="">submit</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+      <!-- footer -->
+  <footer>
+    <div class="links-sociol">
+      <a href=""><i class="fa-brands fa-tiktok"></i></a>
+      <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href=""><i class="fa-brands fa-twitter"></i></a>
+    </div>
+    <div class="page-navigation">
+      <a href="#projects">projects</a>
+      <a href="#skills">skills</a>
+      <a href="#education">education</a>
+      <a href="#contect">contect</a>
+    </div>
+    <a class="last-link" href="">@Muhammad Rashid</a>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

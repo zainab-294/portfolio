@@ -1,0 +1,148 @@
+/* xs */
+/* @media(min-width: 475px){} */
+
+/* sm */
+/* @media(min-width: 640px){} */
+
+/* md */
+/* @media(min-width: 768px){} */
+
+/* lg */
+/* @media(min-width: 1024px){} */
+
+/* xl */
+/* @media(min-width: 1280px){} */
+
+/* 2xl */
+/* @media(min-width: 1536px){} */
+
+.btn{
+    display: inline-block;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: -0.05em;
+    background-color: var(--color-main);
+    color: var(--color-text);
+    padding: 0.6em 2em;
+    border-radius: 100px;
+    transition: 0.6;
+}
+.btn:hover{
+ background-color: var(--color-hover);
+ color: var(--color-text2);
+}
+
+/* container */
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* border: 2px solid rgb(0, 26, 255); */
+}
+
+/* container for canvas */
+.contfull{
+    width: 100%;
+    /* border: 5px solid rgb(229, 76, 49); */
+}
+/* container for hero section*/
+.center{
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* border: 2px solid rgb(0, 255, 60); */
+}
+/* container for about section*/
+.about-container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* border: 2px solid rgb(0, 26, 255); */
+}
+
+.section-gap{
+    margin-top: 5rem;
+}
+
+/* xs */
+@media(min-width: 475px){
+    .container{
+        max-width: 475px;
+    }
+    .center{
+        max-width: 475px;
+    }
+}
+
+/* sm */
+@media(min-width: 640px){
+    .container{
+        max-width: 640px;
+    }    .center{
+        max-width: 640px;
+    }
+    /* .about-container{
+        max-width:640px;
+    } */
+}
+
+/* md */
+@media(min-width: 768px){
+    .container{
+        max-width: 768px;
+    }
+    .center{
+        max-width: 768px;
+    }
+    .about-container{
+        max-width: 768px;
+    }
+}
+
+/* lg */
+@media(min-width: 1024px){
+    .container{
+        max-width: 1024px;
+    }
+    .center{
+        max-width: 1024px;
+    }
+    .about-container{
+        max-width: 1024px;
+    }
+    .section-gap{
+        margin-top: 7rem;
+    }
+
+}
+
+/* xl */
+@media(min-width: 1280px){
+    .container{
+        max-width: 1280px;
+    }
+    .center{
+        max-width: 1280px;
+    }
+    .about-container{
+        max-width: 1280px;
+    }
+}
+
+/* 2xl */
+@media(min-width: 1536px){
+    .container{
+        max-width: 1536px;
+    }
+    .center{
+        max-width: 1536px;
+    }
+    .about-container{
+        max-width: 1536px;
+    }
+}
+

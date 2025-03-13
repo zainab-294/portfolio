@@ -1,0 +1,70 @@
+.education{
+	width: 100%;
+}
+.container{
+	padding-right: calc(10% - 30px);
+}
+.row{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-column-gap: 20px;
+}
+.col header.title{
+	font-family: helvetica;
+	color: var(--color-hover2);
+	padding: 0px 0px 20px 30px;
+}
+.col .contents{
+	padding: 0px 30px;
+	border-left: 2px solid var(--color-hover2);
+}
+.col .contents .box{
+	position: relative;
+	padding: 20px;
+	border: 1px solid var(--color-text2);
+	background-color: var(--color-text2);
+	cursor: pointer;
+	transition: all 0.4s;
+	margin-bottom: 20px;
+	box-shadow: 0px 3px 12px 0px #ccc;
+
+}
+.col .contents .box:hover{
+	box-shadow: 0px 3px 12px 0px #ccc;
+	border: 1px solid var(--color-text);
+}
+
+.col .contents .box::before{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	right: calc(100% + 22px);
+	top: 0;
+	background-color: var(--color-hover);
+	border: 2px solid var(--color-main);
+}
+.box h4{
+	position: relative;
+	color: var(--color-main);
+}
+.box h3{
+	font-size: 19px;
+	padding: 10px 0px 6px;
+	font-family: helvetica;
+	color: var(--color-hover2);
+}
+.box p{
+	line-height: 1.2;
+	font-size: 17px;
+}
+
+/* md */
+@media(min-width: 768px){
+  .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+  }
+}
