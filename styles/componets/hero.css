@@ -39,16 +39,24 @@
 .hero--description{
     max-width: 60ch;
     font-size: var(--size-sm);
+    color: var(--color-text);
 }
-.hero-links-sociol{
-    font-size: 2rem;
-    display: flex;
-    gap: 1rem;
-    transition: 0.7s;
+.hero-links-sociol a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: var(--color-hover2);
+    margin: 9px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  .hero-links-sociol a:hover{
+    background-color: var(--color-hover);
 }
-.hero-links-sociol a:hover{
-    color: var(--color-hover);
-}
+  .hero-links-sociol a i{
+    font-size: var(--size-lg);
+    color: var(--color-text2);
+    opacity: 0.9;
+  }
 .hero--btn{
     text-transform: capitalize;
     font-size: var(--size-sm);
