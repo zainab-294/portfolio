@@ -56,16 +56,6 @@
   .header--link:hover {
     color: var(--color-main);
   }
-  .header--sun {
-    display: block;
-    color: var(--color-main);
-    width: var(--size-xl);
-    height: var(--size-xl);
-    transition: color 0.3s;
-  }
-  .header--sun:hover{
-    color: var(--color-hover2);
-  }
   .header--resume {
     font-size: var(--size-xs);
   }
@@ -79,10 +69,6 @@
   .header--link {
     font-size: var(--size-lg);
   }
-  .header--sun {
-    width: var(--size-xl);
-    height: var(--size-xl);
-  }
   .header--resume {
     font-size: var(--size-sm);
   }
@@ -94,13 +80,12 @@
 
 .mobile-nav{
   position: absolute;
-  border: 2px solid green;
   top: 0;
   left: 0;
   z-index: 999;
   width: 100%;
   height: 100vh;
-  background-color: var(--color-main);
+  background-color: var(--color-hover2);
   display: none;
   justify-content: center;
   align-items: center;
@@ -115,22 +100,16 @@
   align-items: center;
   gap: 3rem;
 }
-.mobile-nav-link{
+.mobile-menu a{
   font-size: var(--size-sm);
   text-decoration: none;
   font-weight: 600;
-  color: var(--color-text);
-}
-.mobile-nav-link:hover{
   color: var(--color-main);
 }
-.mobile-nav-sun{
-  display: block;
-  color: var(--color-1);
-  width: var(--size-xl);
-  height: var(--size-xl);
-  transition: color 0.3s;
+.mobile-menu a:hover{
+  color: var(--color-hover);
 }
+
 .mobile-nav-btn{
   font-size: var(--size-sm);
 }

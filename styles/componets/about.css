@@ -35,7 +35,7 @@
   transform: translate(-50%, -50%);
   z-index: 20;
   background-color: var(--color-main);
-  height: 80vh;
+  height: 93vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,8 +62,50 @@
 .somecont {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: var(--color-main);
 }
+.aboutcont{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  /* border: 2px solid black; */
+}
+.about-h1{
+  align-self: flex-start;
+  font-size: var(--size-2xl);
+  text-transform: capitalize;
+}
+.about-h2{
+  align-self: flex-start;
+  font-size: var(--size-lg);
+  text-transform: capitalize;
+}
+.about-p{
+  text-transform: capitalize;
+  line-height: 1.7;
+  padding-top: 30px;
+}
+.about-sociol{
+  padding-top: 57px;
+  align-self: flex-start;
+}
+.about-sociol a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: var(--color-text);
+  margin: 9px;
+  border-radius: 50%;
+}
+.about-sociol a i{
+  font-size: var(--size-lg);
+  color: var(--color-text2);
+  opacity: 0.9;
+}
+
 
 .x {
   position: fixed;
@@ -115,7 +157,7 @@
 
   }
   .aboutcont{
-    height: 80%;
+    height: 90%;
     width: 88%;
     display: flex;
     flex-direction: column;
@@ -135,10 +177,10 @@
   .about-p{
     text-transform: capitalize;
     line-height: 1.7;
-    padding-top: 30px;
+    padding-top: 20px;
   }
   .about-sociol{
-    padding-top: 57px;
+    padding-top: 45px;
     align-self: flex-start;
   }
   .about-sociol a{
@@ -170,6 +212,33 @@
   }
   .somecont {
     width: 60%;
+  }
+  .aboutcont{
+    height: 83%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+  }
+  .about-h1{
+    align-self: flex-start;
+    font-size: var(--size-2xl);
+    text-transform: capitalize;
+  }
+  .about-h2{
+    align-self: flex-start;
+    font-size: var(--size-lg);
+    text-transform: capitalize;
+  }
+  .about-p{
+    text-transform: capitalize;
+    line-height: 1.7;
+    padding-top: 30px;
+  }
+  .about-sociol{
+    padding-top: 50px;
+    align-self: flex-start;
   }
   .x {
     position: absolute;
